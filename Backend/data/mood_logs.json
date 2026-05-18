@@ -1,0 +1,20 @@
+[
+  {
+    "id": "324e7ce0-c3dc-4e5f-ae3d-916f6dad4380",
+    "timestamp": "2026-05-18T21:38:47.118206",
+    "text": "im good",
+    "mood_score": 5,
+    "sentiment": {
+      "label": "positive",
+      "confidence": 0.7202,
+      "compound": 0.4404,
+      "scores": {
+        "neg": 0.0,
+        "neu": 0.256,
+        "pos": 0.744,
+        "compound": 0.4404
+      }
+    },
+    "date": "2026-05-18"
+  }
+]

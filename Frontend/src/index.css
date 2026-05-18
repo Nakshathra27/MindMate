@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --sage: #7C9E8C;
+  --sage-light: #B8D4C4;
+  --sage-pale: #EDF5F0;
+  --lavender: #9B8EC4;
+  --lavender-light: #D4CEEE;
+  --lavender-pale: #F4F2FB;
+  --warm: #E8A87C;
+  --warm-pale: #FDF4EC;
+  --text: #2C3E35;
+  --text-muted: #7A8F85;
+  --bg: #F8FAF9;
+  --card: #FFFFFF;
+  --border: #E0EAE5;
+  --radius: 16px;
+  --shadow: 0 2px 20px rgba(44, 62, 53, 0.08);
+  --shadow-hover: 0 6px 30px rgba(44, 62, 53, 0.14);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+h1, h2, h3 { font-family: 'DM Serif Display', serif; font-weight: 400; }
+
+.serif-italic { font-style: italic; }
+
+button {
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+button:hover { transform: translateY(-1px); }
+button:active { transform: translateY(0); }
+
+input, textarea {
+  font-family: 'DM Sans', sans-serif;
+  outline: none;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: var(--text);
+  background: var(--card);
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--sage);
+}
+
+textarea { resize: vertical; min-height: 100px; }
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  border: 1px solid var(--border);
+}
+
+.card:hover { box-shadow: var(--shadow-hover); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--sage-light); border-radius: 3px; }
